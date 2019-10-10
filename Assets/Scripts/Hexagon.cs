@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Hexagon : MonoBehaviour
 {
+    Instructions _C_instructions;
+
     public Rigidbody2D rb;
 
     public float shrinkSpeed = 3f;
+   // public GameObject DialogueManager;
     
     // Start is called before the first frame update
     void Start()
     {
+        //Time.timeScale = 0;
+        //DialogueManager.SetActive(true);
         rb.rotation = Random.Range(0,360);
         transform.localScale = Vector3.one * 10f;
 
